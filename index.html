@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline BNB</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Skyline Bed and Breakfast (BNB)</h1>
+    </header>
+
+    <main>
+        <section id="booking-section">
+            <h2>Book Accommodation</h2>
+            <form id="booking-form">
+                <label for="accommodation-type">Accommodation Type:</label>
+                <select id="accommodation-type">
+                    <option value="single-room">Single Room</option>
+                    <option value="double-room">Double Room</option>
+                    <option value="suite">Suite</option>
+                </select><br>
+
+                <label for="check-in-date">Check-in Date:</label>
+                <input type="date" id="check-in-date"><br>
+
+                <label for="check-out-date">Check-out Date:</label>
+                <input type="date" id="check-out-date"><br>
+
+                <label for="total-guests">Total Guests:</label>
+                <input type="number" id="total-guests" min="1" max="10" value="1"><br>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section id="document-upload-section">
+            <h2>Upload Documents</h2>
+            <form id="document-upload-form">
+                <input type="file" id="document-file"><br>
+                <button type="submit">Upload Document</button>
+            </form>
+        </section>
+
+        <section id="feedback-section">
+            <h2>Customer Feedback</h2>
+            <textarea id="feedback-text" rows="4" placeholder="Enter your feedback..."></textarea><br>
+            <button id="submit-feedback">Submit Feedback</button>
+        </section>
+
+        <section id="social-media-section">
+            <h2>Social Media Integration</h2>
+            <p>Share your experience:</p>
+            <button id="facebook-share">Share on Facebook</button>
+            <button id="instagram-share">Share on Instagram</button>
+        </section>
+
+        <section id="vacant-guesthouses-section">
+            <h2>Vacant Guesthouses by Area</h2>
+            <p>Select an area:</p>
+            <select id="area-selector">
+                <option value="downtown">Downtown</option>
+                <option value="suburb">Suburb</option>
+                <option value="rural">Rural</option>
+            </select>
+            <button id="search-vacancies">Search</button>
+
+            <div id="vacant-guesthouses-list">
+                <!-- Vacant guesthouses will be dynamically populated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Skyline BNB. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
