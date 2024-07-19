@@ -1,6 +1,4 @@
-// Simulated data or API integrations would typically replace these placeholders
 
-// Function to handle booking submission
 document.getElementById('booking-form').addEventListener('submit', function(event) {
     event.preventDefault();
     let accommodationType = document.getElementById('accommodation-type').value;
@@ -13,7 +11,7 @@ document.getElementById('booking-form').addEventListener('submit', function(even
     alert('Booking submitted successfully!');
 });
 
-// Function to handle document upload
+
 document.getElementById('document-upload-form').addEventListener('submit', function(event) {
     event.preventDefault();
     let uploadedFile = document.getElementById('document-file').files[0];
@@ -45,18 +43,18 @@ document.getElementById('instagram-share').addEventListener('click', function() 
     alert('Shared on Instagram!');
 });
 
-// Function to handle vacant guesthouses search
+
 document.getElementById('search-vacancies').addEventListener('click', function() {
     let selectedArea = document.getElementById('area-selector').value;
 
-    // Simulated data for vacant guesthouses
+    
     let vacantGuesthouses = [
-        { name: 'Cozy Cottage', area: 'Downtown', price: '$100/night' },
-        { name: 'Green Meadows Villa', area: 'Suburb', price: '$150/night' },
-        { name: 'Riverside Retreat', area: 'Rural', price: '$80/night' }
+        { name: 'Cozy Cottage', area: 'nairobi', price: 'ksh100/night' },
+        { name: 'Green Meadows Villa', area: 'mombasa', price: 'ksh150/night' },
+        { name: 'Riverside Retreat', area: 'kericho', price: 'ksh80/night' }
     ];
 
-    // Display vacant guesthouses for the selected area
+    
     let vacancyList = document.getElementById('vacant-guesthouses-list');
     vacancyList.innerHTML = ''; // Clear previous results
 
