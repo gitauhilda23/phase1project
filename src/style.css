@@ -5,10 +5,17 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: aqua;
+}
+body {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 header {
-    background-color: #333;
+    background-color: #004675;
     color: #fff;
     padding: 10px 0;
     text-align: center;
